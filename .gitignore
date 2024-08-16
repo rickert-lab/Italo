@@ -1,2 +1,5 @@
 
 /sources
+tags
+.DS_Store
+secrets.json
