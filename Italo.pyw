@@ -17,7 +17,7 @@ Group:      Human Immune Monitoring Shared Resource (HIMSR)
             University of Colorado, Anschutz Medical Campus
 
 Title:      Italo
-Summary:    Italo file transfer tool for HALO v1.0 (2024-08-15)
+Summary:    Italo file transfer tool for HALO v0.1 (2024-08-15)
 URL:        https://github.com/christianrickert/Italo
 
 Description:
