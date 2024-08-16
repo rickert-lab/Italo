@@ -18,4 +18,4 @@ Image transfer tool for Indica Labs' HALO
 >Please make sure to limit access to the `secrets.json` file to people you trust with modifying the HALO's SQL database.
 
 >[!CAUTION]
->Modifying entries in a database or copying files between storage systems bears the risk of unexpected behaviour and failures. HALO's SQL database reports errors upon failing requests, and Italo only copies files without modification of the source: However, you should favor stable network connections (ethernet > wifi) and avoid tunneling protocols (vpn) to improve your user experience.
+>Modifying entries in a database or copying files between storage systems bears the risk of unexpected behaviour and failures. HALO's SQL database reports errors upon failing transfer requests, and Italo only copies files without modification of the source or the target: However, you should favor stable network connections (ethernet > wifi) and avoid tunneling protocols (vpn) to improve your user experience.
