@@ -1,5 +1,5 @@
 # Italo
-Image transfer tool for Indica Labs' HALO
+Image transfer tool for Indica Labs' HALO  🤌
 <img src="./Italo.png" alt="GUI with macOS" width="712">
 >[!TIP]
 >Italo requires access to HALO's GraphQL API server with a `scope=serviceuser|graphql` user account. For details on how to create the HALO service client, please see [Step 2](https://gitlab.com/indica_labs_public/example-code#step-2-create-halo-service-client) of Indica Labs' python example.
