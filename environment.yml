@@ -1,3 +1,7 @@
+# Anaconda's Terms of Service for organizations (academic & commercial)
+# with more than 200 employees require either a abusiness or enterprise
+# license to avoid violation of the ToS. For details, please see:
+# https://legal.anaconda.com/policies/en?name=terms-of-service
 name: Italo
 channels:
   - defaults
