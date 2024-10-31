@@ -269,7 +269,7 @@ class MainWindow:
         # Set up root window
         self.root = root
         self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
-        root.title("Italo - Image Transfer Tool for HALO v0.1")
+        root.title("Italo - Image Transfer Tool for HALO v0.11")
         root.minsize(width=600, height=root.winfo_reqheight())
 
         # Restrict resizing in the Y direction
