@@ -11,6 +11,14 @@ See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with this program.
 If not, see <https://www.gnu.org/licenses/gpl-3.0>.
+
+Author:     Christian Rickert <christian.rickert@cuanschutz.edu>
+Group:      Human Immune Monitoring Shared Resource (HIMSR)
+            University of Colorado, Anschutz Medical Campus
+
+Title:      Italo
+Summary:    Italo file transfer tool for HALO v0.11 (2024-10-31)
+URL:        https://github.com/rickert-lab/Italo
 """
 
 import aiohttp
@@ -47,7 +55,7 @@ async def get_credentials(secrets):
             url=f"https://{secrets['server_name']}/idsrv/connect/token",
             data={
                 "client_id": secrets["client_name"],
-                "client_secret": secrets["client_secrect"],
+                "client_secret": secrets["client_secret"],
                 "grant_type": "client_credentials",
                 "scope": secrets["client_scope"],
             },

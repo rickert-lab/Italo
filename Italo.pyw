@@ -17,8 +17,8 @@ Group:      Human Immune Monitoring Shared Resource (HIMSR)
             University of Colorado, Anschutz Medical Campus
 
 Title:      Italo
-Summary:    Italo file transfer tool for HALO v0.1 (2024-08-15)
-URL:        https://github.com/christianrickert/Italo
+Summary:    Italo file transfer tool for HALO v0.11 (2024-10-31)
+URL:        https://github.com/rickert-lab/Italo
 
 Description:
 
@@ -138,7 +138,7 @@ class MainWindow:
         with open(os.path.abspath(file), "w", encoding="utf-8") as secrets_file:
             secrets_template = {
                 "client_name": "[GraphQL client name]",
-                "client_secrect": "[GraphQL client secret]",
+                "client_secret": "[GraphQL client secret]",
                 "client_scope": "serviceuser graphql",
                 "grant_type": "client_credentials",
                 "server_name": "[GraphQL server name]",
@@ -330,7 +330,7 @@ class MainWindow:
 
         # Create and place the widgets in frame 4
         self.sbutton = tk.Button(
-            self.frame4, text="Seach", command=self.on_search_images
+            self.frame4, text="Search", command=self.on_search_images
         )
         self.sbutton.grid(row=0, column=0, padx=5)
         self.tbutton = tk.Button(

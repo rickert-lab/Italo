@@ -9,7 +9,7 @@ Image transfer tool for Indica Labs' HALO  🤌
 >```JSON
 >{
 >  "client_name": "[GraphQL client name]",
->  "client_secrect": "[GraphQL client secret]",
+>  "client_secret": "[GraphQL client secret]",
 >  "client_scope": "serviceuser graphql",
 >  "grant_type": "client_credentials",
 >  "server_name": "[GraphQL server name]"
