@@ -1,4 +1,5 @@
 # python>=3.12
+# tkinter (macOS: python-tk)
 aiohttp
 gql
 websockets
