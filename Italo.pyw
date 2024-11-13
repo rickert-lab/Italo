@@ -87,12 +87,16 @@ class MainWindow:
 
     def on_search_images(self):
         """Helper function for `search_images`."""
-        asyncio.ensure_future(self.search_images(os.path.abspath(self.sentry.get())))
+        asyncio.ensure_future(
+            self.search_images(os.path.abspath(str(self.sentry.get()).strip()))
+        )
 
     def on_transfer_images(self):
         """Helper function for `transfer_images`."""
         asyncio.ensure_future(
-            self.transfer_images(self.images, os.path.abspath(self.dentry.get()))
+            self.transfer_images(
+                self.images, os.path.abspath(str(self.dentry.get()).strip())
+            )
         )
 
     def select_directory(self):
