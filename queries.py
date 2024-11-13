@@ -17,7 +17,7 @@ Group:      Human Immune Monitoring Shared Resource (HIMSR)
             University of Colorado, Anschutz Medical Campus
 
 Title:      Italo
-Summary:    Italo file transfer tool for HALO v0.11 (2024-10-31)
+Summary:    Italo file transfer tool for HALO v0.11 (2024-11-18)
 URL:        https://github.com/rickert-lab/Italo
 """
 
@@ -35,6 +35,7 @@ MAX_NODES = 100  # server limit per page
 async def get_client(secrets, credentials):
     # configure client transport
     websocket_transport = gql_WebsocketsTransport(
+        connect_args={"max_size": 100 * 1024 * 1024},  # 100 MiB limit
         url=f"wss://{secrets['server_name']}/graphql",
         headers={"authorization": f"bearer {credentials['access_token']}"},
         ssl=ssl.create_default_context(),

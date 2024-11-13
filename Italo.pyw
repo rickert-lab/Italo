@@ -17,7 +17,7 @@ Group:      Human Immune Monitoring Shared Resource (HIMSR)
             University of Colorado, Anschutz Medical Campus
 
 Title:      Italo
-Summary:    Italo file transfer tool for HALO v0.11 (2024-10-31)
+Summary:    Italo file transfer tool for HALO v0.12 (2024-11-13)
 URL:        https://github.com/rickert-lab/Italo
 
 Description:
@@ -269,7 +269,7 @@ class MainWindow:
         # Set up root window
         self.root = root
         self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
-        root.title("Italo - Image Transfer Tool for HALO v0.11")
+        root.title("Italo - Image Transfer Tool for HALO v0.12")
         root.minsize(width=600, height=root.winfo_reqheight())
 
         # Restrict resizing in the Y direction
