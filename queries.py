@@ -39,7 +39,7 @@ async def get_client(secrets, credentials):
         url=f"wss://{secrets['server_name']}/graphql",
         headers={"authorization": f"bearer {credentials['access_token']}"},
         ssl=ssl.create_default_context(),
-        keep_alive_timeout=300,
+        keep_alive_timeout=6 * 60 * 60,  # 6 hrs timeout for server response
     )
     # configure session client with transport
     session_client = gql.Client(
