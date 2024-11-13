@@ -1,4 +1,6 @@
 __pycache__
+/build
+/dist
 /sources
 tags
 .DS_Store
