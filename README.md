@@ -6,7 +6,7 @@ Image transfer tool for Indica Labs' HALO  🤌
 >```terminal
 >"C:\Program Files\Indica Labs\Identity Provider\IndicaLabs.ApplicationLayer.Halo.IdentityProvider.exe" reconfigure --script AddResearchServiceClient "client_type=Italo;scopes=serviceuser|graphql"
 >```
->The configuration details required for Italo to communicate with HALO's GraphQL API server can then be found on the HALO server system with the Identity Provider's config file:
+>Details for the newly created service client can then be found on the HALO server system with the Identity Provider's config file:
 >
 >`C:\ProgramData\Indica Labs\Configuration\IndicaLabs.ApplicationLayer.Halo.IdentityProvider\local-production.yml`
 >```YAML
@@ -19,6 +19,8 @@ Image transfer tool for Indica Labs' HALO  🤌
 >    secrets:
 >    - secret: [GraphQL client secret]
 >```
+>However, the creation of new service clients won't come into effect until the corresponding Windows service has been restarted: Either restart the HALO server system or open the "Services" application to restart the service: Select the "HALO Identity Provider" service and restart the service from either the service description on the left (hyperlink) or from the drop-down menu (right-click).
+>
 >Notice: The `[GraphQL client name]` is composed of the service client name `Italo`, an underscore `_`, and the `[GraphQL server name]`.
 
 >[!WARNING]
